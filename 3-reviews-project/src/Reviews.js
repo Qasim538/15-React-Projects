@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import people from './data'
+import {FachevronLeft, FachevronRight, FaQuoteRight } from 'react-icons/fa'
 
 const Reviews = () => {
+  const [index, setIndex] = useState(0);
+  const {name, job, text} = people[index]
   return (
-    <h2>Review Components</h2>
+    <article className='review'>
+      
+    </article>
   )
 }
 

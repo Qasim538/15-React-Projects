@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import singlecolor from './SingleColor'
 
-// import Values from 'values.js'
+import Values from 'values.js'
 
 
 
@@ -12,7 +12,8 @@ function App() {
 
    const handleSubmit = (e) => {
     e.preventDefault()
-    console.log('hello');
+    let colors = new Values(color).all(10)
+    console.log(colors);
    }
 
 

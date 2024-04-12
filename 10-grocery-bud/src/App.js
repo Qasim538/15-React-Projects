@@ -1,7 +1,7 @@
 
 import React, {useState, useEffect} from 'react'
 import List from './List'
-import Aler from './Alert'
+import Alert from './Alert'
 
 function App() {
   const [name, setName] = useState('');
@@ -16,7 +16,17 @@ function App() {
 
   return (
     <section className="section-center">
-    <form className='grocery-form' onSubmit={handleSubmit}></form>
+    <form className='grocery-form' onSubmit={handleSubmit}>
+      {alert.show && <Alert />}
+      <h3>Grocery Bud</h3>
+      <div className="form-control">
+        <input type="text" />
+        <button type='submit' className='submit-btn'>
+          { isEditing ? 'edit' : 'submit' }
+        </button>
+      </div>
+      <div></div>
+    </form>
       <div className='grocery-container'>
         <List />
         <button className='clear-btn'>

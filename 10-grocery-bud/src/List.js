@@ -5,7 +5,9 @@ const List = ({ items, removeItem, editItem }) => {
 
 
 return (
-    <div></div>
+    <div>
+        <h2>List Components</h2>
+    </div>
 )
 
 }

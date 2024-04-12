@@ -5,7 +5,7 @@ const List = ({ items, removeItem, editItem }) => {
 
 
 return (
-    
+    <div></div>
 )
 
 }
